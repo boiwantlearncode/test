@@ -1,0 +1,14 @@
+.textbox {
+    width: 40vw;
+}
+
+.red-bg {
+    background-color: red;
+}
+
+#upload-post {
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}

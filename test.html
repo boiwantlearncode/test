@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Facebook</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <link rel="stylesheet" href="test.css">
+    </head>
+    <body>
+        <section class="hero is-danger is-small">
+            <section class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title">Welcome to social media, Isa</h1>
+                </div>
+            </section>
+        </section>
+
+        <section class="section">
+            <div class="container has-text-centered red-bg" id="upload-post">
+                <form class="columns is-centered" action="uploadPost" method="POST" enctype="multipart/form-data">
+                    <!-- <div class="columns is-centered"> -->
+                        <div class="column has-text-centered">
+                            <div class='field is-horizontal'>
+                                <div class="field-label is-medium">
+                                    <label class="label">Title: </label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <p class="control">
+                                            <input class="input is-medium textbox" type="text" name="title">
+                                        </p>    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class='field is-horizontal'>
+                                <div class="field-label is-medium">
+                                    <label class="label">Description: </label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <p class="control">
+                                            <input class="input is-medium textbox" type="text" name="title">
+                                        </p>    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="container"> -->
+                            <div class="field is-horizontal is-grouped is-grouped-right">
+                                <div class="field-label is-medium">
+                                    <label class="label">Image:</label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="file">
+                                            <label class="file-label">
+                                                <input class="file-input" type="file" name="image">
+                                                <span class="file-cta">
+                                                    <span class="file-icon">
+                                                      <i class="fas fa-upload"></i>
+                                                    </span>
+                                                    <span class="file-label">
+                                                      Choose a file…
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                            <input class="button" type="submit" value="Post">
+                        </div>
+                    <!-- </div> -->
+                </form>
+            </div>
+        </section>
+
+        <div>
+            <h1>Blue Orange</h1>
+            <img src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" height="250px" width="250px">
+            <h2>This is a blue orange.</h2>
+            <h3>By Isa.</h3>
+        </div>
+
+        <form action="/logout" method="POST">
+            <input type="submit" value="Logout">
+        </form>
+    </body>
+</html>
